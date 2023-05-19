@@ -1,0 +1,38 @@
+div {
+    width: 300px;
+    height: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: bold;
+    font-size: 42px;
+    word-spacing: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #eee;
+    color: #6495ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    z-index: -1;
+    width: 350px;
+    height: 220px;
+    background-color: crimson;
+    position: absolute;
+    top: 0;
+    transform: rotate(4deg);
+}
+
+div::after {
+    content: "";
+    z-index: -1;
+    width: 350px;
+    height: 220px;
+    background-color: #6495ed;
+    position: absolute;
+    top: 0;
+    transform: rotate(-4deg);
+}

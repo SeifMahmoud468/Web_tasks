@@ -1,0 +1,68 @@
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 700px;
+    margin: 15px auto;
+    border-bottom: 5px solid green;
+}
+
+th,
+td {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px;
+    padding: 5px 15px;
+}
+
+th {
+    background-color: rgb(35, 35, 35);
+    height: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 15%;
+}
+
+.group {
+    width: 13%;
+}
+
+.name {
+    width: 34%;
+}
+
+.points {
+    width: 13%;
+}
+
+.control {
+    width: 25%;
+}
+
+td {
+    background-color: #eee;
+    height: 80px;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    border: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 2px;
+    color: white;
+    width: 45%;
+    cursor: pointer;
+}
+
+.view {
+    background-color: deepskyblue;
+}
+
+.delete {
+    background-color: deeppink;
+}

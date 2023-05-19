@@ -1,0 +1,86 @@
+:root {
+    --backGround: rgb(243, 242, 242);
+    --elementColor: rgb(208, 208, 208);
+    --elementPadding: 10px;
+    --elementMargin: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.page {
+    background-color: var(--backGround);
+    padding: var(--elementPadding);
+    margin: var(--elementMargin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 2px 10px 0 #000;
+}
+
+.header {
+    padding: var(--elementPadding);
+    margin: var(--elementMargin);
+    display: flex;
+}
+
+.logo {
+    background-color: var(--elementColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--elementMargin);
+    margin-left: 0;
+    padding: var(--elementPadding);
+}
+
+.links {
+    background-color: var(--elementColor);
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding: var(--elementPadding);
+    margin: var(--elementMargin);
+    margin-right: 0;
+}
+
+li {
+    padding: 0 var(--elementPadding);
+}
+
+.main-area {
+    height: 600px;
+    padding: var(--elementPadding);
+    margin: var(--elementMargin);
+    display: flex;
+}
+
+.content {
+    background-color: var(--elementColor);
+    padding: var(--elementPadding);
+    margin: var(--elementMargin);
+    margin-left: 0;
+    flex-grow: 3;
+}
+
+.sidebar {
+    background-color: var(--elementColor);
+    padding: var(--elementPadding);
+    margin: var(--elementMargin);
+    margin-right: 0;
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: var(--elementColor);
+    margin: calc(var(--elementMargin) + var(--elementPadding));
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+
+.box {
+    position: relative;
+    width: 320px;
+    background-color: white;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    height: 175px;
+    transition: all 1s ease-in-out;
+}
+
+.pic {
+    position: relative;
+    color: white;
+}
+
+.react {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.contant {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+h2 {
+    margin: 2px 0px 5px;
+}
+
+p {
+    margin: 5px 0;
+    color: rgb(126, 126, 126);
+}
+
+table {
+    margin: 5px 0;
+    position: relative;
+    right: 2px;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 2px;
+}
+
+td {
+    color: rgb(126, 126, 126);
+    ;
+}
+
+td i span {
+    display: inline-block;
+    margin-left: 5px;
+    color: black;
+}
+
+.sale {
+    margin: 5px 0;
+}
+
+.sale span {
+    display: block;
+    margin-top: 5px;
+    color: rgb(0, 197, 197);
+}
+
+.hot::before {
+    z-index: 10000;
+    content: "Hot";
+    color: white;
+    background-color: red;
+    padding: 2px 5px;
+    position: absolute;
+    left: 8px;
+    top: calc(179.89px - 36px);
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+
+.featured::after {
+    content: "Featured";
+    color: white;
+    padding: 3px 5px;
+    background-color: rgb(255, 106, 52);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+}
+
+.property {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    top: 0;
+    transition: all 1s ease-in-out;
+    background-color: rgb(100 255 203 / 36%);
+}
+
+.property span {
+    display: block;
+    color: black;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.property:hover {
+    opacity: 1;
+}
+
+.pic:hover img {
+    opacity: 0.3;
+}

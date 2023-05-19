@@ -1,0 +1,153 @@
+ body {
+     background-color: rgb(90, 90, 90);
+ }
+
+ /* span {
+     display: block;
+     width: 50px;
+     height: 50px;
+     background-color: #eee;
+     border: 5px solid black;
+     border-left-color: #eee;
+     border-radius: 50%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     animation: rotation 1s linear infinite;
+ }
+
+ @keyframes rotation {
+     to {
+         transform: translate(-50%, -50%) rotate(1turn);
+     }
+ } */
+
+
+ div {
+     box-sizing: border-box;
+     width: 50px;
+     visibility: hidden;
+     height: 50px;
+     margin: 50px auto;
+     background-color: transparent;
+     border-radius: 50%;
+     border: 5px solid orange;
+     border-bottom-color: transparent;
+     position: relative;
+     animation-name: rotation;
+     animation-duration: 2.5s;
+     animation-iteration-count: infinite;
+     animation-play-state: paused;
+     animation-timing-function: linear;
+ }
+
+ div::before {
+     content: "";
+     box-sizing: border-box;
+     width: 70px;
+     height: 70px;
+     background-color: transparent;
+     border-radius: 50%;
+     border: 5px solid black;
+     border-bottom-color: transparent;
+     position: absolute;
+     top: -15px;
+     left: -15px;
+     animation-name: rotation;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-play-state: paused;
+     animation-timing-function: linear;
+ }
+
+ div::after {
+     content: "";
+     box-sizing: border-box;
+     width: 30px;
+     height: 30px;
+     background-color: transparent;
+     border-radius: 50%;
+     border: 5px solid deepskyblue;
+     border-bottom-color: transparent;
+     position: absolute;
+     top: 5px;
+     left: 5px;
+     animation-name: rotation;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-play-state: paused;
+     animation-timing-function: linear;
+ }
+
+ @keyframes rotation {
+     to {
+         visibility: visible;
+         transform: rotate(1turn);
+     }
+ }
+
+ div:hover,
+ div:hover::after,
+ div:hover::before {
+     animation-play-state: running;
+ }
+
+ /*
+div {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid deepskyblue;
+    border-left-color: transparent;
+    transform: rotate(-45deg);
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+div::before {
+    content: "";
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid orange;
+    border-left-color: transparent;
+    transform: rotate(90deg);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+div::after {
+    content: "";
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    border-left-color: transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(310deg);
+    }
+}
+
+div:hover {
+    animation-play-state: paused;
+} */
